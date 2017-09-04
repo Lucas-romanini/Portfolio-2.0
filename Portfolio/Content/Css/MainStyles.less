@@ -1,26 +1,50 @@
 ﻿@import "Variables.less";
 @import "Index.less";
 
-*{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
 
 body {
 }
 
-.navbar-header {
-    width:100%;
-
-
-    .navbar{
-        &-collapse{
-            margin-top:12.5px;
-            float:right;
-            font-size:1.2em;
-        }
-    } 
+h1, h2, h3, h4, h5, h6 {
+    color: @blue;
 }
 
-.body-content{
-    margin-top:55px;
+a{
+
+}
+
+.navbar {
+    background-color: #929292;
+    border: none;
+
+    &-header {
+        width: 100%;
+
+
+
+        .navbar {
+            &-collapse {
+                margin-top: 12.5px;
+                float: right;
+                font-size: 1.2em;
+
+                a {
+                    color: @blue;
+                    text-decoration:none;
+                    &:hover {
+                        color: black;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.body-content {
+    margin-top: 55px;
 }

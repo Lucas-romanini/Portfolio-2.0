@@ -1,4 +1,5 @@
-﻿.Index img[alt="Billede af Mig"] {
+﻿@import "Variables.less";
+.Index img[alt="Billede af Mig"] {
   margin-left: 31.25px;
 }
 .refencer-box {
@@ -7,6 +8,18 @@
 * {
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000651;
+}
+.navbar {
+  background-color: #929292;
+  border: none;
+}
 .navbar-header {
   width: 100%;
 }
@@ -14,6 +27,14 @@
   margin-top: 12.5px;
   float: right;
   font-size: 1.2em;
+}
+.navbar-header .navbar-collapse a {
+  color: #000651;
+  text-decoration: none;
+}
+.navbar-header .navbar-collapse a:hover {
+  color: black;
+  text-decoration: underline;
 }
 .body-content {
   margin-top: 55px;
